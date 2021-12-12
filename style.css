@@ -1,0 +1,73 @@
+.heading, .result, .choices, .choices div, .scoreboard, .scores {
+    border: 1px solid black;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+.heading, .result{
+    text-align: center;
+}
+
+.heading {
+    font-size: 70px;
+}
+
+.roundinfo {
+    font-size: 30px;
+    margin: 100px 0px 0px 0px;
+}
+
+.roundcount {
+    text-align: center;
+    font-size: 40px;
+}
+
+.result {
+    height: 80px;
+}
+
+button {
+    width:150px;
+    height:150px;
+    font-size: 30px;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin:200px 0px 80px 0px;
+   
+}
+
+.scoreboard {
+    width: 50vw;
+    text-align: center;
+    margin:auto;
+}
+
+.score {
+    font-size: 40px;
+}
+
+.scores {
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+}
+
+.end {
+    width:40vw;
+    height:50vh;
+    background-color: grey;
+    position: fixed;
+    top:20vh;
+    right:30vw;
+    display:none;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    
+}
