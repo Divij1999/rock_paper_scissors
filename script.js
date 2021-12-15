@@ -42,18 +42,16 @@ function score(){
        const enemyScore=document.querySelector(".enemyscore");
        yourScore.innerText=`Your:${playerCount}`;
        enemyScore.innerText=`Enemy:${computerCount}`;
+       const result=document.querySelector(".result");
        if(playerCount===5){
-        const end=document.querySelector(".end");
-        end.innerText=`Your WIN!
-                       Reload page to play again`;
-        end.style.display="flex";
+        result.innerText="You Win! Reload page to play again";
+        return;
        }
        else if(computerCount===5){
-        const end=document.querySelector(".end");
-        end.innerText=`Your WIN!
-                       Reload page to play again`;
-        end.style.display="flex";
+         result.innerText="You Lose! Reload page to play again";
+         return;
        }
+
        roundCount++;
        return;
 }
